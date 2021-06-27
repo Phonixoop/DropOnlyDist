@@ -1,0 +1,15 @@
+---
+application:
+  name: "droponlydist"
+  project: "Drop"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "DropDb"
+  version: "4.4"
+routers:
+- name: "main-droponlydist"
+  routes:
+  - application_name: "droponlydist"
+    paths:
+    - "/*"
